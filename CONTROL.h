@@ -12,12 +12,12 @@
 #ifdef ARDUINO
 	#include "Arduino.h"
 	//***************************************
-	#define EN_12V				A13 //PK5 - Pin 84  = 67 // Output
-	#define C_DRIVER_ON			A12 //PK4 - Pin 85	= 66 // Input 
-	#define L_DRIVER_ON			A11 //PK3 - Pin 86  = 65 // Input
-	#define C_CONNECTED			A10 //PK2 - Pin 87  = 64 // Input 
-	#define L_CONNECTED			A9  //PK1 - Pin 88  = 63 // Input 
-	#define CHECK_L_C			A8  //PK0 - Pin 89  = 62 // Output 
+	#define EN_12V			A13 //PK5 - Pin 84  = 67 // Output
+	#define C_DRIVER_ON		A12 //PK4 - Pin 85	= 66 // Input 
+	#define L_DRIVER_ON		A11 //PK3 - Pin 86  = 65 // Input
+	#define C_CONNECTED		A10 //PK2 - Pin 87  = 64 // Input 
+	#define L_CONNECTED		A9  //PK1 - Pin 88  = 63 // Input 
+	#define CHECK_L_C		A8  //PK0 - Pin 89  = 62 // Output 
 	#define MP_CHARGE_ON		10	//PB4 - Pin 23 = 10  // Output
 	#define MP_CHARGE_OFF		11  //PB5 - Pin 24 = 11  // Output
 	#define MP_DISCHARGE_ON		12  //PB6 - Pin 25 = 12	 // Output
