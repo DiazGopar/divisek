@@ -2,7 +2,7 @@
  * ltc6803-4.cpp
  *
  * Created: 15/07/2014 9:05:54
- *  Author: Administrador
+ *  Author: Gopar
  */ 
 
 #include "ltc6803_4.h"
@@ -15,6 +15,7 @@
 // This Functions are Arduino SPI abstraction
 
 unsigned long time;
+///**/
 
 void settimeout(uint16_t mstimeout) {
 	time = millis() + mstimeout;	
@@ -352,7 +353,7 @@ boolean LTC6803::_readRegister(uint8_t Reg, uint8_t nReg, uint8_t nError, uint8_
 	spiEnd();
 	
 	#ifdef TRACE_ERROR
-		_numberofoperations++; //Ïncrement Number of operations with LTC
+		_numberofoperations++; //ï¿½ncrement Number of operations with LTC
 	#endif // TRACE_ERROR
 
 	if(bytestoRead[nReg-1] != calcPEC(bytestoRead,nReg-1)) {//Check for PEC
@@ -432,7 +433,7 @@ void LTC6803::_sendCommand(uint8_t command, uint8_t flag)
 	spiEnd(flag);
 	
 	#ifdef TRACE_ERROR
-		_numberofoperations++; //Ïncrement Number of operations with LTC
+		_numberofoperations++; //ï¿½ncrement Number of operations with LTC
 	#endif // TRACE_ERROR
 }
 
