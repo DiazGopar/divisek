@@ -48,7 +48,7 @@ public:
 							uint8_t _numberofcols,
 							uint8_t firstrow, 
 							uint8_t firstelement,
-							uint8_t lastelement) = 0;*/
+							uint8_t lastelement) = 0; */
 
 	virtual void calculate(STATE *state) = 0;
 														
